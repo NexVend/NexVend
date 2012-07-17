@@ -44,7 +44,7 @@ a:hover { color: #E73; }
 
 /* ====== Elements ====== */
 body > * {
-	width:				960px;
+	width:				800px;
 	margin:				auto;
 }
 header hgroup > * {
@@ -64,9 +64,39 @@ header hgroup h3 {
 	margin-top:			-1rem;
 	text-shadow:		0 0 1px #000;
 }
+header nav {
+	height:				40px;
+	margin:				1rem auto 0;
+	border-bottom:		2px solid #444;
+}
 
 /* ===== ID & Class ===== */
+#portal {
+	float:				right;
+	margin:				17px auto;
+}
+#portal .switch {
+	margin:				0 8px;
+	min-width:			64px;
+	display:			inline-block;
+	cursor:				pointer;
+	text-align:			center;
+	border-bottom:		4px solid transparent;
+}
+#portal .active {
+	border-bottom:		4px solid #444;
+}
+#title {
+	color:				#444;
+	font-size:			2em;
+	font-family:		'Exo';
+	display:			inline-block;
+	text-shadow:		0 1px 1px #000;
+}
 
 /* ===== Pseudoclass ===== */
+#portal .switch:hover {
+	border-color:		#C00;
+}
 
 /* ==== Media Queries ==== */
