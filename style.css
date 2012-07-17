@@ -69,6 +69,11 @@ header nav {
 	margin:				1rem auto 0;
 	border-bottom:		2px solid #444;
 }
+aside {
+	top:				40%;
+	width:				100%;
+	position:			absolute;
+}
 
 /* ===== ID & Class ===== */
 #portal {
@@ -93,6 +98,25 @@ header nav {
 	display:			inline-block;
 	text-shadow:		0 1px 1px #000;
 }
+.navigator {
+	width:				160px;
+	height:				240px;
+	line-height:		240px;
+	font-size:			500%;
+	color:				#999;
+	opacity:			0.5;
+	text-align:			center;
+	cursor:				pointer;
+	position:			relative;
+}
+.navigator.first {
+	left:				64px;
+	position:			absolute;
+}
+.navigator.last {
+	right:				64px;
+	position:			absolute;
+}
 .fade {
 	-webkit-transition:	all 200ms ease;
 	-moz-transition:	all 200ms ease;
@@ -104,6 +128,11 @@ header nav {
 /* ===== Pseudoclass ===== */
 #portal .switch:hover {
 	border-color:		#C00;
+}
+.navigator:hover {
+	color:				#444;
+	opacity:			1;
+	text-shadow:		0 0 50px #444;
 }
 
 /* ==== Media Queries ==== */
