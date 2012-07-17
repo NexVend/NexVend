@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* =========================
+ * 0. Reset
+ * 1. Imports
+ * 2. Elements
+ * 3. ID & Class
+ * 4. Pseudoclass
+ * 5. Media Queries
+========================= */
+
+/* ======= Reset ======= */
+* {
+	-moz-box-sizing:	border-box;
+	box-sizing:			border-box;
+}
+::-moz-selection {
+	color:				#fff;
+	background:			#444;
+}
+::selection {
+	color:				#fff;
+	background:			#444;
+}
+html { overflow-y: scroll; }
+body {
+	width:				100%;
+	margin:				auto;
+	padding:			0;
+	color:				#444;
+	font-family:		Verdana, Georgia, Helvetica,	/* Desktop	*/
+						"Droid Sans", "Helvetica Neue",	/* Mobile	*/
+						Sans-serif;						/* Fallback	*/
+}
+a {
+	color:				#79B;
+	outline:			0;
+	text-decoration:	none;
+}
+a:hover { color: #E73; }
+
+/* ======= Imports ======= */
+
+/* ====== Elements ====== */
+
+/* ===== ID & Class ===== */
+
+/* ===== Pseudoclass ===== */
+
+/* ==== Media Queries ==== */
