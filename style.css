@@ -93,6 +93,13 @@ header nav {
 	display:			inline-block;
 	text-shadow:		0 1px 1px #000;
 }
+.fade {
+	-webkit-transition:	all 200ms ease;
+	-moz-transition:	all 200ms ease;
+	-ms-transition:		all 200ms ease;
+	-o-transition:		all 200ms ease;
+	transition:			all 200ms ease;
+}
 
 /* ===== Pseudoclass ===== */
 #portal .switch:hover {
