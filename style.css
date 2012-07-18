@@ -49,6 +49,10 @@ input {
 	padding:			4px 8px;
 	font-size:			1.2em;
 }
+hr {
+	border:				1px solid;
+	border-color:		#ccc transparent #fff;
+}
 
 /* ======= Imports ======= */
 
@@ -100,6 +104,11 @@ input[type="submit"] {
 	width:				120px;
 	height:				40px;
 }
+footer {
+	margin:				2rem auto 4rem;
+	text-align:			center;
+}
+footer a { margin: auto 1rem; }
 
 /* ===== ID & Class ===== */
 #portal {
@@ -123,6 +132,10 @@ input[type="submit"] {
 	font-family:		'Exo';
 	display:			inline-block;
 	text-shadow:		0 1px 1px #000;
+}
+#copyright {
+	margin:				1rem auto;
+	font-size:			0.75rem;
 }
 .navigator {
 	width:				160px;
@@ -154,10 +167,6 @@ input[type="submit"] {
 .blog > h4 {
 	margin:				auto;
 	display:			inline-block;
-}
-.blog > hr {
-	border:				1px solid;
-	border-color:		#ccc transparent #fff;
 }
 .fade {
 	-webkit-transition:	all 200ms ease;
