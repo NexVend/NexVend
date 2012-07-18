@@ -74,6 +74,9 @@ aside {
 	width:				100%;
 	position:			absolute;
 }
+section article {
+	margin:				2rem;
+}
 
 /* ===== ID & Class ===== */
 #portal {
