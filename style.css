@@ -120,6 +120,22 @@ section article {
 	right:				64px;
 	position:			absolute;
 }
+.blog {
+	margin:				1rem auto;
+	padding:			1rem 2rem;
+	display:			block;
+	border:				1px solid transparent;
+	border-radius:		4px;
+}
+.blog > time { float: right; }
+.blog > h4 {
+	margin:				auto;
+	display:			inline-block;
+}
+.blog > hr {
+	border:				1px solid;
+	border-color:		#ccc transparent #fff;
+}
 .fade {
 	-webkit-transition:	all 200ms ease;
 	-moz-transition:	all 200ms ease;
@@ -136,6 +152,11 @@ section article {
 	color:				#444;
 	opacity:			1;
 	text-shadow:		0 0 50px #444;
+}
+.blog:hover {
+	border-color:		#ccc;
+	background-color:	rgba(255,255,255,0.25);
+	box-shadow:			inset 0 0 3px 1px #fff, 2px 3px 10px -2px #ddd;
 }
 
 /* ==== Media Queries ==== */
