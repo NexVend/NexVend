@@ -39,6 +39,16 @@ a {
 	text-decoration:	none;
 }
 a:hover { color: #E73; }
+label {
+	margin:				1rem auto;
+	display: 			block;
+}
+input {
+	width:				320px;
+	margin:				auto;
+	padding:			4px 8px;
+	font-size:			1.2em;
+}
 
 /* ======= Imports ======= */
 
@@ -76,6 +86,19 @@ aside {
 }
 section article {
 	margin:				2rem;
+}
+address {
+	float:				right;
+	font-size:			0.8rem;
+	margin-right:		3rem;
+}
+input[type="text"] {
+	border:				1px solid #999;
+	border-radius:		4px;
+}
+input[type="submit"] {
+	width:				120px;
+	height:				40px;
 }
 
 /* ===== ID & Class ===== */
