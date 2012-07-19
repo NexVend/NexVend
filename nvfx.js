@@ -23,17 +23,15 @@ nvc.resetTitle = function () {
 }
 nvc.setTitle = function ( title ) {
 	if ( title === $("#title").html() ) return;		// Don't change if it's same
-	$("#title").hide().html( title ).fadeIn(200);	// if not, then change title
+	$("#title").hide().html(
+		title || nvc.title
+	).fadeIn(200);	//// if not, then set title to the given value or to default
 }
 nvc.setArticle = function ( id ) {
 	$("article").hide();
 	$("article#" + id).fadeIn();
 }
 //		========================================================================
-
-//	-------------------------------------------------- Initiate DOM manipulation
-nvc.setArticle(1);
-//	============================================================================
 
 //	------------------------------------------------------------- Event Listenrs
 $(".switch").each(function () {
@@ -47,7 +45,7 @@ $(".switch").each(function () {
 $(".switch").on("click", function () {
 	var index = $(this).data("title");		/// Read the title value of the menu
 	nvc.title = nvc.titles[ index ];		///// Change the default title value
-	nvc.setTitle( nvc.title );							/// First, set the title
+	nvc.setTitle();										/// First, set the title
 	nvc.setArticle( index );							/// Then set the article
 
 	$(".switch.active").removeClass("active");	//
@@ -63,12 +61,11 @@ $(".navigator").on("click", function () {
 		if ( index == 4 ) index = 1;			//
 	}											//// Evaluate the value of index
 	nvc.title = nvc.titles[ index ];			// Now, set target title's index
-	nvc.setTitle( nvc.title );							/// First, set the title
+	nvc.setTitle();										/// First, set the title
 	nvc.setArticle( index );							/// Then set the article
 
 	$(".switch.active").removeClass("active");	//////// Remove the active-class
-	var $switch = ".switch[data-title='"	//
-		+ index + "']";						// Target switch's element attribute
+	var $switch = ".switch[data-title='" + index + "']";	/// Target attribute
 	$( $switch ).addClass("active");		///// and, apply class to the switch
 });
 //	============================================================================
