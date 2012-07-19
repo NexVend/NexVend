@@ -53,4 +53,22 @@ $(".switch").on("click", function () {
 	$(".switch.active").removeClass("active");	//
 	$(this).addClass("active");					//// Then apply the active-class
 });
+$(".navigator").on("click", function () {
+	var index = $(".switch.active").data("title");	// Fetch current title value
+	if ( $(this).hasClass("first") ) {			//
+		index--;								//
+		if ( !index ) index = 3;				//
+	} else if ( $(this).hasClass("last") ) {	//
+		index++;								//
+		if ( index == 4 ) index = 1;			//
+	}											//// Evaluate the value of index
+	nvc.title = nvc.titles[ index ];			// Now, set target title's index
+	nvc.setTitle( nvc.title );							/// First, set the title
+	nvc.setArticle( index );							/// Then set the article
+
+	$(".switch.active").removeClass("active");	//////// Remove the active-class
+	var $switch = ".switch[data-title='"	//
+		+ index + "']";						// Target switch's element attribute
+	$( $switch ).addClass("active");		///// and, apply class to the switch
+});
 //	============================================================================
