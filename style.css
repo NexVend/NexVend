@@ -62,21 +62,21 @@ body > * {
 	width:				800px;
 	margin:				auto;
 }
+header hgroup { padding: 2rem 0; }
 header hgroup > * {
 	margin:				auto;
 	padding:			0;
 	text-align:			center;
-	font-family:		'Squada One';
 	cursor:				default;
 }
 header hgroup h1 {
 	font-size:			500%;
-	padding-top:		2rem;
+	font-family:		'Squada One';
 	text-shadow:		0 0 2px #000, 4px 4px 0 #ccc;
 }
 header hgroup h3 {
-	font-size:			200%;
-	margin-top:			-1rem;
+	margin-top:			-0.5rem;
+	font-family:		'Exo';
 	text-shadow:		0 0 1px #000;
 }
 header nav {
@@ -215,5 +215,5 @@ footer a { margin: auto 1rem; }
 	footer a { font-size: 80%; }
 }
 @media all and (orientation: portrait) {
-	header hgroup h1 { padding-top: 4rem; }
+	header hgroup { padding: 4rem 0; }
 }
