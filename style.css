@@ -25,6 +25,7 @@
 html { overflow-y: scroll; }
 body {
 	width:				100%;
+	min-width:			320px;
 	margin:				auto;
 	padding:			0;
 	color:				#444;
@@ -192,3 +193,20 @@ footer a { margin: auto 1rem; }
 }
 
 /* ==== Media Queries ==== */
+@media all and (max-width: 800px) {
+	body > * {
+		width:				100%;
+		padding:			0 1rem;
+	} .navigator { display: none; }
+	section article { margin: 2rem auto; }
+}
+@media all and (max-width: 640px) {
+}
+@media all and (max-width: 512px) {
+}
+@media all and (max-width: 400px) {
+	footer a { font-size: 80%; }
+}
+@media all and (orientation: portrait) {
+	header hgroup h1 { padding-top: 4rem; }
+}
