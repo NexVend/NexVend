@@ -97,7 +97,8 @@ address {
 	font-size:			0.8rem;
 	margin-right:		3rem;
 }
-input[type="text"] {
+address h3 { margin-top: 0; }
+input[type="text"], input[type="email"] {
 	border:				1px solid #999;
 	border-radius:		4px;
 }
@@ -201,9 +202,12 @@ footer a { margin: auto 1rem; }
 		width:				100%;
 		padding:			0 1rem;
 	}
+	input { width: 240px; }
 	section article { margin: 2rem auto; }
 }
 @media all and (max-width: 640px) {
+	address { float: none; }
+	form { margin-top: 2rem; }
 }
 @media all and (max-width: 540px) {
 	header nav { margin: 1rem auto 6rem; }
