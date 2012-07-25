@@ -93,7 +93,7 @@ section article { margin: 2rem; }
 article h2 { margin: 1.5rem auto 0; }
 article p {
 	font-size:			0.80rem;
-	text-indent:		2em;
+	text-indent:		3rem;
 }
 address {
 	float:				right;
@@ -165,8 +165,9 @@ footer a { margin: auto 1rem; }
 	margin:				1rem auto;
 	padding:			1rem 2rem;
 	display:			block;
-	border:				1px solid transparent;
+	border:				1px solid #ccc;
 	border-radius:		4px;
+	background-color:	rgba(255,255,255,0.25);
 }
 .blog > time { float: right; }
 .blog > h4 {
@@ -192,7 +193,6 @@ footer a { margin: auto 1rem; }
 }
 .blog:hover {
 	border-color:		#ccc;
-	background-color:	rgba(255,255,255,0.25);
 	box-shadow:			inset 0 0 3px 1px #fff, 2px 3px 10px -2px #ddd;
 }
 
@@ -219,6 +219,11 @@ footer a { margin: auto 1rem; }
 		clear:				both;
 		display:			block;
 		text-align:			center;
+	}
+	.blog > time { float: none; }
+	.blog > h4 {
+		margin-top:			0.5rem;
+		display:			block;
 	}
 }
 @media all and (max-width: 400px) {
