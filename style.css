@@ -89,8 +89,11 @@ aside {
 	width:				100%;
 	position:			absolute;
 }
-section article {
-	margin:				2rem;
+section article { margin: 2rem; }
+article h2 { margin: 1.5rem auto 0; }
+article p {
+	font-size:			0.80rem;
+	text-indent:		2em;
 }
 address {
 	float:				right;
