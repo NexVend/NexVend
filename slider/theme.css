@@ -4,9 +4,9 @@
 #slider img { position:absolute; top:0px; left:0px; display:none; }
 #slider a { border:0; display:block; }
 
-.nivo-directionNav a { display:block; width:30px; height:30px; background:url(arrows.png) no-repeat; text-indent:-9999px; border:0; }
-.nivo-directionNav a.nivo-nextNav { background-position:-30px 0; right:15px; }
-.nivo-directionNav a.nivo-prevNav { left:15px; }
+.nivo-directionNav a { display:block; width:32px; height:32px; background:url(arrows.png) no-repeat; text-indent:-9999px; border:0; }
+.nivo-directionNav a.nivo-nextNav { background-position:-32px 0; right:16px; }
+.nivo-directionNav a.nivo-prevNav { left:16px; }
 
 .nivo-caption a { color:#fff; border-bottom:1px dotted #fff; }
 .nivo-caption a:hover { color:#fff; }
