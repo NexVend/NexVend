@@ -57,18 +57,18 @@
 /* Caption styles */
 .nivo-caption {
 	position:absolute;
-	left:0px;
-	bottom:0px;
+	right:0px;
+	bottom:16px;
 	background:#000;
 	color:#fff;
-	width:100%;
-	z-index:8;
-	padding: 5px 10px;
-	opacity: 0.8;
+	width: 40%;
+	padding: 8px 16px;
 	overflow: hidden;
 	display: none;
-	-moz-opacity: 0.8;
+	z-index:8;
 	filter:alpha(opacity=8);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
@@ -106,4 +106,18 @@
 }
 .nivo-controlNav a.active {
 	font-weight:bold;
+}
+@media all and (max-width: 640px) {
+	.nivo-caption {
+		bottom: 8px;
+		width: 60%;
+		font-size: 0.8rem;
+	}
+}
+@media all and (max-width: 540px) {
+	.nivo-caption {
+		bottom: 0;
+		width: 100%;
+		font-size: 0.6rem;
+	}
 }
