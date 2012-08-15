@@ -110,7 +110,7 @@
 @media all and (max-width: 640px) {
 	.nivo-caption {
 		bottom: 8px;
-		width: 60%;
+		width: 50%;
 		font-size: 0.8rem;
 	}
 }
@@ -118,6 +118,7 @@
 	.nivo-caption {
 		bottom: 0;
 		width: 100%;
+		text-align: right;
 		font-size: 0.6rem;
 	}
 }
