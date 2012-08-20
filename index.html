@@ -146,18 +146,19 @@
 				Email: <a href="mailto:contact@nexvend.com">contact@nexvend.com</a>
 			</address>
 
-			<form id="contactForm" action="" method="POST" enctype="text/plain">
+			<form id="contactForm" method="POST" action="http://gears.debs.io/mailer.d/">
 				Want to drop us a line?
 				<label>
-					<input type="text" name="name" placeholder="Name">
+					<input type="text" id="name" name="name" placeholder="Name">
 				</label>
 				<label>
-					<input type="email" name="email" placeholder="Email">
+					<input type="email" id="email" name="email" placeholder="Email">
 				</label>
 				<label>
-					<input type="text" name="message" placeholder="Message">
+					<input type="text" id="message" name="message" placeholder="Message">
 				</label>
-				<input type="submit" value="Send" class="button fade">
+				<input type="hidden" id="subject" name="subject" value="A message from NexVend.COM">
+				<input type="submit" id="nvcRoot" name="nvcRoot" value="Send" class="button fade">
 			</form>
 		</article>
 	<section>
