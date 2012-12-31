@@ -6,18 +6,10 @@
  *
  **/
 
-//	------------------------------------- Declare namespace, objects and methods
-//		----------------------------------------- The global/container namespace
-var nvc = {};
+//	------------------------- Declare objects and methods in the `nvc` namespace
 //		========================================================================
 
 //		------------------------------------- Now the children objects & methods
-nvc.title = "Who we are...";					//// The current article's title
-nvc.titles = {									///// Storage for ALL the titles
-	"1"	:	"Who we are...",
-	"2"	:	"What we do...",
-	"3"	:	"Where we are..."
-}
 nvc.resetTitle = function () {
 	nvc.setTitle( nvc.title );						/// Read & set default title
 }

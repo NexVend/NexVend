@@ -183,7 +183,18 @@
 	</footer>
 
 	<!-- Lazy Loadable JS -->
-	<script src='nvfx.js'></script>
+	<script>
+	// Here goes the global namespace
+	var nvc = {};
+	// Language specific sctrings
+	nvc.title = "我们是...";	//// The current article's title
+	nvc.titles = {					///// Storage for ALL the titles
+		"1"	:	"我们是...",
+		"2"	:	"我们的服务包括...",
+		"3"	:	"我们在..."
+	}
+	</script>
+	<script src='../nvfx.js'></script>
 	<script src='../slider/nivo.js'></script>
 	<script>
 		$('#slider').nivoSlider({
