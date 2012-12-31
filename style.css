@@ -113,7 +113,6 @@ footer {
 	margin:				2rem auto 4rem;
 	text-align:			center;
 }
-footer a { margin: auto 1rem; }
 
 /* ===== ID & Class ===== */
 #portal {
@@ -137,6 +136,22 @@ footer a { margin: auto 1rem; }
 	font-family:		'Exo';
 	display:			inline-block;
 	text-shadow:		0 1px 1px #000;
+}
+#l10n { margin-top: 1rem; }
+#social > a { margin: auto 1rem; }
+#l10n > a {
+	padding:			4px 12px;
+	border:				1px solid #ccc;
+	background:			-webkit-linear-gradient(#eee, #ddd);
+	background:			-moz-linear-gradient(#eee, #ddd);
+	background:			-o-linear-gradient(#eee, #ddd);
+	background:			linear-gradient(#eee, #ddd);
+}
+#l10n > a.on {
+	background:			-webkit-linear-gradient(#ddd, #eee);
+	background:			-moz-linear-gradient(#ddd, #eee);
+	background:			-o-linear-gradient(#ddd, #eee);
+	background:			linear-gradient(#ddd, #eee);
 }
 #copyright {
 	margin:				1rem auto;
@@ -186,6 +201,8 @@ footer a { margin: auto 1rem; }
 #portal .switch:hover {
 	border-color:		#C00;
 }
+#l10n > a:first-child { border-radius: 4px 0 0 4px; }
+#l10n > a:last-child { border-radius: 0 4px 4px 0; }
 .navigator:hover {
 	color:				#444;
 	opacity:			1;
